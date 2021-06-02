@@ -1,0 +1,9 @@
+#!name=YouTube
+#!desc=Skip yellow-dot ads.
+#!system=ios
+
+[URL Rewrite]
+^https://youtubei\.googleapis\.com/youtubei/v1/player/ad_break - reject
+
+[MITM]
+hostname = %APPEND% youtubei.googleapis.com
